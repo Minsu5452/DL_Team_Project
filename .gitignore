@@ -1,0 +1,25 @@
+# 데이터 / 산출물 / 모델
+data/
+*.csv
+*.pkl
+*.pth
+*.h5
+
+# 클론한 third-party 모델
+ChromaGAN_run/
+DeOldify_run/
+InstColor_run/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+.DS_Store
+
+# 도구 상태
+.omc/
