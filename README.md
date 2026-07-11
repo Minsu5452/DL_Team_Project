@@ -18,7 +18,7 @@
 ## 접근
 
 - AI Hub 한국 음식 이미지를 224×224 컬러/그레이 쌍으로 변환해 학습·평가 데이터를 만들었습니다. Colab 메모리 제약으로 train 12,922장·test 2,465장으로 줄여 사용했습니다.
-- ChromaGAN은 PyTorch remake 구현을 가져와 한국 음식 이미지로 10 epoch fine-tuning했습니다(lr 2e-5, Colab Pro). 결과는 기존 weight 추론, 원본 컬러 이미지와 나란히 비교했습니다.
+- ChromaGAN은 PyTorch remake 구현을 가져와 한국 음식 이미지로 10 epoch fine-tuning했습니다(lr 2e-5, Colab Pro). fine-tuning 결과는 기존 weight의 추론 결과, 원본 컬러 이미지와 나란히 비교했습니다.
 - DeOldify는 학습이 진행되지 않아 사전학습 모델로 테스트 그레이 이미지를 일괄 추론했습니다.
 - InstColorization은 원저자의 사전학습 weight 배포 URL이 삭제되어 일부 checkpoint만 확보했고, fine-tuning이 중단된 지점까지를 노트북에 기록했습니다.
 - 평가는 원본 컬러 이미지와의 정성 비교로 정리했고, PSNR·SSIM 계산 코드를 함께 남겼습니다.
